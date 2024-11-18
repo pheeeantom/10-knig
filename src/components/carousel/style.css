@@ -1,0 +1,102 @@
+.Carousel {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+    padding: 20px 0;
+    height: 700px;
+    margin-bottom: 100px;
+}
+
+.Carousel-content {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.to-left-gone {
+    animation-name: goneOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.to-left-come {
+    animation-name: comeOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goneOpacity {
+	0% {
+        transform: translate(0%);
+		opacity: 1;
+        visibility: visible;
+	}
+	100% {
+        transform: translate(-50%);
+		opacity: 0;
+        visibility: hidden;
+	}
+}
+
+@keyframes comeOpacity {
+	0% {
+        transform: translate(50%);
+		opacity: 0;
+        visibility: hidden;
+	}
+	100% {
+        transform: translate(0%);
+		opacity: 1;
+        visibility: visible;
+	}
+}
+
+.to-right-gone {
+    animation-name: goneROpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.to-right-come {
+    animation-name: comeROpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goneROpacity {
+	0% {
+        transform: translate(0%);
+		opacity: 1;
+        visibility: visible;
+	}
+	100% {
+        transform: translate(50%);
+		opacity: 0;
+        visibility: hidden;
+	}
+}
+
+@keyframes comeROpacity {
+	0% {
+        transform: translate(-50%);
+		opacity: 0;
+        visibility: hidden;
+	}
+	100% {
+        transform: translate(0%);
+		opacity: 1;
+        visibility: visible;
+	}
+}

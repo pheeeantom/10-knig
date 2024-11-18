@@ -1,0 +1,21 @@
+.Item-pic {
+    height: 200px;
+}
+
+.Item-name {
+    font-size: 30px;
+}
+
+.Item-cite {
+    padding: 10px 0;
+}
+
+@media (max-width: 1200px) {
+    .Item {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .Item span, .Item img, .Item button {
+        margin: 10px;
+    }
+}
